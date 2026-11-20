@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="contribBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050706"/>
+      <stop offset="50%" stop-color="#080A09"/>
+      <stop offset="100%" stop-color="#0E1611"/>
+    </linearGradient>
+
+    <filter id="contribGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .font-mono { font-family: ui-monospace, 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      @keyframes pulseRadar { 0% { opacity: 0.3; } 50% { opacity: 0.9; } 100% { opacity: 0.3; } }
+      .radar-line { animation: pulseRadar 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="950" height="160" rx="14" fill="url(#contribBg)"/>
+  <rect x="3" y="3" width="944" height="154" rx="12" fill="none" stroke="#00C878" stroke-width="1.2" stroke-opacity="0.6"/>
+
+  <g transform="translate(35, 35)">
+    <rect x="0" y="0" width="12" height="18" fill="#00C878" rx="2" filter="url(#contribGlow)"/>
+    <text x="22" y="15" fill="#FFFFFF" font-size="18" font-weight="800" letter-spacing="1.5" class="font-sans">
+      CONTRIBUTION VILLAGE // THE GRAND LINE COMMIT RADAR
+    </text>
+    <text x="0" y="44" fill="#8B8B95" font-size="13" class="font-sans">
+      Every commit builds another fortress in the backend metropolis — tracked continuously with automated synchronization.
+    </text>
+  </g>
+
+  <!-- Live Pulse Stats Indicator -->
+  <g transform="translate(35, 110)">
+    <circle cx="6" cy="6" r="4" fill="#00C878" filter="url(#contribGlow)"/>
+    <circle cx="6" cy="6" r="8" fill="none" stroke="#00C878" stroke-width="1" opacity="0.4"/>
+    <text x="24" y="10" fill="#00C878" font-size="11.5" font-weight="700" letter-spacing="1.5" class="font-mono">
+      COMMIT PROTOCOL: DAILY DISCIPLINE // SUB-MILLISECOND LATENCY TARGET
+    </text>
+    <text x="750" y="10" fill="#39FF14" font-size="11" font-weight="700" class="font-mono">
+      [ SYNC: 100% ONLINE ]
+    </text>
+  </g>
+</svg>

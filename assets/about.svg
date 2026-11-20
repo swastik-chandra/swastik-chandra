@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 370" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aboutBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050706"/>
+      <stop offset="60%" stop-color="#080A09"/>
+      <stop offset="100%" stop-color="#101912"/>
+    </linearGradient>
+
+    <filter id="aboutGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="aboutGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#00C878" stroke-width="0.5" stroke-opacity="0.06"/>
+    </pattern>
+
+    <style>
+      .font-mono { font-family: ui-monospace, 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .border-pulse { animation: bp 3s ease-in-out infinite; }
+      @keyframes bp { 0%, 100% { stroke-opacity: 0.5; } 50% { stroke-opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="950" height="370" rx="14" fill="url(#aboutBg)"/>
+  <rect width="950" height="370" rx="14" fill="url(#aboutGrid)"/>
+  <rect x="3" y="3" width="944" height="364" rx="12" fill="none" stroke="#00C878" stroke-width="1.2" class="border-pulse"/>
+
+  <!-- Section Header -->
+  <g transform="translate(30, 32)">
+    <rect x="0" y="0" width="12" height="18" fill="#00C878" rx="2" filter="url(#aboutGlow)"/>
+    <text x="22" y="15" fill="#FFFFFF" font-size="18" font-weight="800" letter-spacing="1.5" class="font-sans">
+      IDENTITY // BACKEND ENGINEERING DOSSIER
+    </text>
+    <text x="470" y="15" fill="#00C878" font-size="12" font-weight="700" letter-spacing="2" class="font-mono">
+      [ HUNTER STATUS: RECRUITER READY ]
+    </text>
+    <line x1="0" y1="28" x2="890" y2="28" stroke="#00C878" stroke-width="0.8" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- Left Column: Biography & Background -->
+  <g transform="translate(30, 85)">
+    <!-- Bio Card -->
+    <rect x="0" y="0" width="530" height="255" rx="10" fill="#121713" stroke="#00C878" stroke-width="0.8" stroke-opacity="0.4"/>
+    
+    <g transform="translate(20, 26)">
+      <text x="0" y="0" fill="#00C878" font-size="12" font-weight="800" letter-spacing="1.5" class="font-mono">PROFILE SUMMARY</text>
+      
+      <text x="0" y="24" fill="#E6EDF3" font-size="13" font-weight="400" line-height="1.6" class="font-sans">
+        Backend Engineering student with hands-on experience designing and
+      </text>
+      <text x="0" y="44" fill="#E6EDF3" font-size="13" font-weight="400" class="font-sans">
+        scaling <tspan fill="#00C878" font-weight="700">Java Spring Boot</tspan> microservices, REST APIs, and <tspan fill="#39FF14" font-weight="700">Redis-powered</tspan>
+      </text>
+      <text x="0" y="64" fill="#E6EDF3" font-size="13" font-weight="400" class="font-sans">
+        distributed architectures. Proven ability in concurrent systems, database
+      </text>
+      <text x="0" y="84" fill="#E6EDF3" font-size="13" font-weight="400" class="font-sans">
+        design, caching layers, and fault-tolerant microservice communication.
+      </text>
+
+      <!-- Education Block -->
+      <g transform="translate(0, 115)">
+        <rect x="0" y="-8" width="490" height="58" rx="6" fill="#080A09" stroke="#8B8B95" stroke-width="0.5" stroke-opacity="0.3"/>
+        <text x="14" y="12" fill="#8B8B95" font-size="10" font-weight="700" letter-spacing="1" class="font-mono">ACADEMIC FOUNDATION</text>
+        <text x="14" y="30" fill="#FFFFFF" font-size="12.5" font-weight="700" class="font-sans">
+          B.Tech in Computer Science &amp; Engineering <tspan fill="#00C878" font-size="11.5">(2023 – 2027)</tspan>
+        </text>
+        <text x="14" y="44" fill="#8B8B95" font-size="11" class="font-sans">
+          Uma Nath Singh Institute of Engineering and Technology (VBSPU, Jaunpur)
+        </text>
+      </g>
+
+      <!-- Metrics Row -->
+      <g transform="translate(0, 192)">
+        <g transform="translate(0, 0)">
+          <text x="0" y="0" fill="#00C878" font-size="18" font-weight="900" class="font-mono">200+</text>
+          <text x="0" y="14" fill="#8B8B95" font-size="9.5" font-weight="600" class="font-mono">CONCURRENT REQS</text>
+        </g>
+        <g transform="translate(130, 0)">
+          <text x="0" y="0" fill="#39FF14" font-size="18" font-weight="900" class="font-mono">&lt; 1ms</text>
+          <text x="0" y="14" fill="#8B8B95" font-size="9.5" font-weight="600" class="font-mono">VIRALITY SCORING</text>
+        </g>
+        <g transform="translate(260, 0)">
+          <text x="0" y="0" fill="#00E676" font-size="18" font-weight="900" class="font-mono">80%</text>
+          <text x="0" y="14" fill="#8B8B95" font-size="9.5" font-weight="600" class="font-mono">NOTIFICATION CUT</text>
+        </g>
+        <g transform="translate(380, 0)">
+          <text x="0" y="0" fill="#FF1744" font-size="18" font-weight="900" class="font-mono">100%</text>
+          <text x="0" y="14" fill="#8B8B95" font-size="9.5" font-weight="600" class="font-mono">SPAM DEFENSE</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Column: Zoro Three Swords Philosophy -->
+  <g transform="translate(580, 85)">
+    <rect x="0" y="0" width="340" height="255" rx="10" fill="#121713" stroke="#00C878" stroke-width="0.8" stroke-opacity="0.4"/>
+    
+    <g transform="translate(20, 24)">
+      <text x="0" y="0" fill="#FFFFFF" font-size="12" font-weight="800" letter-spacing="1.5" class="font-mono">
+        SANTORYU // BACKEND CREED
+      </text>
+
+      <!-- Sword 1 -->
+      <g transform="translate(0, 22)">
+        <rect x="0" y="0" width="300" height="56" rx="6" fill="#080A09" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.3"/>
+        <circle cx="16" cy="18" r="4" fill="#FFFFFF"/>
+        <text x="28" y="21" fill="#FFFFFF" font-size="11.5" font-weight="700" class="font-mono">WADO ICHIMONJI // PRINCIPLES</text>
+        <text x="14" y="42" fill="#8B8B95" font-size="11" class="font-sans">
+          Clean Code, OOP, Thread-safety &amp; DSA mastery
+        </text>
+      </g>
+
+      <!-- Sword 2 -->
+      <g transform="translate(0, 88)">
+        <rect x="0" y="0" width="300" height="56" rx="6" fill="#080A09" stroke="#FF1744" stroke-width="0.8" stroke-opacity="0.4"/>
+        <circle cx="16" cy="18" r="4" fill="#FF1744"/>
+        <text x="28" y="21" fill="#FF1744" font-size="11.5" font-weight="700" class="font-mono">SANDAI KITETSU // SPEED</text>
+        <text x="14" y="42" fill="#8B8B95" font-size="11" class="font-sans">
+          Sub-ms Redis atomic ops (INCR, SET NX EX)
+        </text>
+      </g>
+
+      <!-- Sword 3 -->
+      <g transform="translate(0, 154)">
+        <rect x="0" y="0" width="300" height="56" rx="6" fill="#080A09" stroke="#00C878" stroke-width="0.8" stroke-opacity="0.6"/>
+        <circle cx="16" cy="18" r="4" fill="#00C878" filter="url(#aboutGlow)"/>
+        <text x="28" y="21" fill="#00C878" font-size="11.5" font-weight="700" class="font-mono">ENMA // KING OF HELL SCALE</text>
+        <text x="14" y="42" fill="#8B8B95" font-size="11" class="font-sans">
+          Fault isolation, microservices &amp; horizontal scale
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

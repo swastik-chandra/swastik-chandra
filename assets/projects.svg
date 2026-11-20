@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 490" width="100%" height="100%">
+  <defs>
+    <linearGradient id="projBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050706"/>
+      <stop offset="60%" stop-color="#080A09"/>
+      <stop offset="100%" stop-color="#101A13"/>
+    </linearGradient>
+
+    <filter id="projGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="projGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00C878" stroke-width="0.5" stroke-opacity="0.05"/>
+    </pattern>
+
+    <style>
+      .font-mono { font-family: ui-monospace, 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="950" height="490" rx="14" fill="url(#projBg)"/>
+  <rect width="950" height="490" rx="14" fill="url(#projGrid)"/>
+  <rect x="3" y="3" width="944" height="484" rx="12" fill="none" stroke="#00C878" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- Section Header -->
+  <g transform="translate(30, 32)">
+    <rect x="0" y="0" width="12" height="18" fill="#00C878" rx="2" filter="url(#projGlow)"/>
+    <text x="22" y="15" fill="#FFFFFF" font-size="18" font-weight="800" letter-spacing="1.5" class="font-sans">
+      FEATURED MISSIONS // PRODUCTION BACKEND PLATFORMS
+    </text>
+    <text x="560" y="15" fill="#00C878" font-size="11.5" font-weight="700" letter-spacing="2" class="font-mono">
+      S-RANK SYSTEM DEPLOYMENTS
+    </text>
+    <line x1="0" y1="28" x2="890" y2="28" stroke="#00C878" stroke-width="0.8" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- Project 1: Virality-Service -->
+  <g transform="translate(30, 80)">
+    <rect x="0" y="0" width="890" height="180" rx="10" fill="#121713" stroke="#00C878" stroke-width="1" stroke-opacity="0.5"/>
+    <path d="M 0 0 L 0 180" stroke="#00C878" stroke-width="6" rx="3" filter="url(#projGlow)"/>
+
+    <!-- Header details -->
+    <g transform="translate(24, 26)">
+      <text x="0" y="0" fill="#00C878" font-size="11" font-weight="800" letter-spacing="2" class="font-mono">
+        MISSION 01 // HIGH-THROUGHPUT SYSTEM
+      </text>
+      <text x="0" y="24" fill="#FFFFFF" font-size="19" font-weight="800" class="font-sans">
+        Scalable Virality Engine &amp; Notification Platform
+      </text>
+      <text x="490" y="24" fill="#39FF14" font-size="14" font-weight="700" class="font-mono">
+        (Virality-Service)
+      </text>
+
+      <!-- Key highlights -->
+      <g transform="translate(0, 48)">
+        <text x="0" y="0" fill="#E6EDF3" font-size="12.5" class="font-sans">
+          • Thread-safe rate limiting microservice utilizing <tspan fill="#39FF14" font-weight="700">Redis atomic operations (INCR, SET NX EX)</tspan> sustaining 200+ concurrent requests.
+        </text>
+        <text x="0" y="19" fill="#E6EDF3" font-size="12.5" class="font-sans">
+          • Real-time virality scoring engine with <tspan fill="#00C878" font-weight="700">sub-millisecond score updates</tspan> via weighted engagement metrics &amp; Redis INCRBY.
+        </text>
+        <text x="0" y="38" fill="#E6EDF3" font-size="12.5" class="font-sans">
+          • Multi-tier guardrails (horizontal caps, vertical depth, cooldowns) eliminating 100% spam; CRON batch digests reducing alerts by 80%.
+        </text>
+      </g>
+
+      <!-- Stack Badges -->
+      <g transform="translate(0, 115)">
+        <rect x="0" y="0" width="70" height="22" rx="4" fill="#080A09" stroke="#00C878" stroke-width="0.8"/>
+        <text x="35" y="15" fill="#00C878" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">Java</text>
+
+        <rect x="80" y="0" width="105" height="22" rx="4" fill="#080A09" stroke="#00C878" stroke-width="0.8"/>
+        <text x="132" y="15" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">Spring Boot</text>
+
+        <rect x="195" y="0" width="65" height="22" rx="4" fill="#080A09" stroke="#39FF14" stroke-width="0.8"/>
+        <text x="227" y="15" fill="#39FF14" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">Redis</text>
+
+        <rect x="270" y="0" width="95" height="22" rx="4" fill="#080A09" stroke="#8B8B95" stroke-width="0.8"/>
+        <text x="317" y="15" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">PostgreSQL</text>
+
+        <rect x="375" y="0" width="70" height="22" rx="4" fill="#080A09" stroke="#8B8B95" stroke-width="0.8"/>
+        <text x="410" y="15" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">Docker</text>
+
+        <rect x="740" y="-4" width="100" height="26" rx="5" fill="#080A09" stroke="#00C878" stroke-width="1"/>
+        <text x="790" y="14" fill="#00C878" font-size="11" font-weight="800" text-anchor="middle" class="font-mono">GitHub Repo ↗</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Project 2: Ai-Fitness-Microservice -->
+  <g transform="translate(30, 280)">
+    <rect x="0" y="0" width="890" height="180" rx="10" fill="#121713" stroke="#00C878" stroke-width="1" stroke-opacity="0.5"/>
+    <path d="M 0 0 L 0 180" stroke="#39FF14" stroke-width="6" rx="3" filter="url(#projGlow)"/>
+
+    <g transform="translate(24, 26)">
+      <text x="0" y="0" fill="#39FF14" font-size="11" font-weight="800" letter-spacing="2" class="font-mono">
+        MISSION 02 // DISTRIBUTED ARCHITECTURE
+      </text>
+      <text x="0" y="24" fill="#FFFFFF" font-size="19" font-weight="800" class="font-sans">
+        AI-Powered Fitness Recommendation Microservices Platform
+      </text>
+      <text x="590" y="24" fill="#00E676" font-size="14" font-weight="700" class="font-mono">
+        (Ai-Fitness-Microservice)
+      </text>
+
+      <g transform="translate(0, 48)">
+        <text x="0" y="0" fill="#E6EDF3" font-size="12.5" class="font-sans">
+          • Architected across <tspan fill="#00C878" font-weight="700">4 independent microservices</tspan>: User Management, Activity Tracking, AI Recommendations &amp; Service Discovery.
+        </text>
+        <text x="0" y="19" fill="#E6EDF3" font-size="12.5" class="font-sans">
+          • Integrated <tspan fill="#39FF14" font-weight="700">Eureka Service Discovery</tspan> for dynamic service registration, entirely eliminating hardcoded IP/host endpoints.
+        </text>
+        <text x="0" y="38" fill="#E6EDF3" font-size="12.5" class="font-sans">
+          • Designed with fault isolation and horizontal scalability principles to prevent cascading failures and enable independent deployments.
+        </text>
+      </g>
+
+      <g transform="translate(0, 115)">
+        <rect x="0" y="0" width="70" height="22" rx="4" fill="#080A09" stroke="#00C878" stroke-width="0.8"/>
+        <text x="35" y="15" fill="#00C878" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">Java</text>
+
+        <rect x="80" y="0" width="105" height="22" rx="4" fill="#080A09" stroke="#00C878" stroke-width="0.8"/>
+        <text x="132" y="15" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">Spring Boot</text>
+
+        <rect x="195" y="0" width="75" height="22" rx="4" fill="#080A09" stroke="#00E676" stroke-width="0.8"/>
+        <text x="232" y="15" fill="#00E676" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">Eureka</text>
+
+        <rect x="280" y="0" width="90" height="22" rx="4" fill="#080A09" stroke="#8B8B95" stroke-width="0.8"/>
+        <text x="325" y="15" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">REST APIs</text>
+
+        <rect x="380" y="0" width="70" height="22" rx="4" fill="#080A09" stroke="#8B8B95" stroke-width="0.8"/>
+        <text x="415" y="15" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">Docker</text>
+
+        <rect x="740" y="-4" width="100" height="26" rx="5" fill="#080A09" stroke="#39FF14" stroke-width="1"/>
+        <text x="790" y="14" fill="#39FF14" font-size="11" font-weight="800" text-anchor="middle" class="font-mono">GitHub Repo ↗</text>
+      </g>
+    </g>
+  </g>
+</svg>
